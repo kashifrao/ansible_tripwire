@@ -1,0 +1,20 @@
+#  == Copyright (c) SM Data Cloud
+#     All Rights Reserved
+#
+# Email: smcloud.operations@gmail.com
+# --------------------------------------------------------------------------
+# WARNING: This file belongs to the Core framework. Avoid any local changes
+# --------------------------------------------------------------------------
+#
+# This file is Managed by ANSIBLE
+# --------------------------------------------------------------------------
+
+
+    # For new install
+    - name: "Install Tripwire yum package"
+      yum:
+        name:
+          - tripwire
+        state: present
+      become: yes
+      become_user: root
